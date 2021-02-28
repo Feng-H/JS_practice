@@ -10,7 +10,13 @@
 
 (function() {
     'use strict';
+    // 删除百度首页热榜
+    let firstPage =document.querySelector('#s-hotsearch-wrapper');
+    firstPage.remove();
 
-    const msg = 'Hello from Feng-H on BAIDU';
-    alert(msg);
+    // 删除搜索页面的热榜
+    let secondPage =document.querySelector('#content_right');
+    console.log(secondPage); // 输出null 无法进行移除，需要找到热榜所对应的 ID
+    // secondPage.remove();
+
 })();
