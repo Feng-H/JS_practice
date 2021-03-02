@@ -15,7 +15,7 @@
     firstPage.remove();
 
     // 删除搜索页面的热榜
-    let secondPage =document.querySelector('#content_right');
+    let secondPage =document.getElementById('content_right');
     console.log(secondPage); // 输出null 无法进行移除，需要找到热榜所对应的 ID
     // secondPage.remove();
 
